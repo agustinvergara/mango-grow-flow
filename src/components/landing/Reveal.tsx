@@ -32,10 +32,11 @@ export function Reveal({
     return () => observer.disconnect();
   }, []);
 
+  const Component = Tag as "div";
+
   return (
-    // @ts-expect-error dynamic tag ref typing
-    <Tag
-      ref={ref}
+    <Component
+      ref={ref as React.RefObject<HTMLDivElement>}
       data-visible={visible}
       style={{ transitionDelay: `${delay}ms` }}
       className={`reveal ${className}`}
