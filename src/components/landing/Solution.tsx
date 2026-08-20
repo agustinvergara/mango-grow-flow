@@ -66,8 +66,6 @@ export function Solution() {
               key={f.id}
               as="article"
               className="scroll-mt-24"
-              // @ts-expect-error id passthrough handled below
-              delay={0}
             >
               <div id={f.id} className="grid items-center gap-10 lg:grid-cols-2">
                 <div className={i % 2 === 1 ? "lg:order-2" : ""}>
