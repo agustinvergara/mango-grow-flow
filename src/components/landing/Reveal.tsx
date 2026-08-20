@@ -42,6 +42,6 @@ export function Reveal({
       className={`reveal ${className}`}
     >
       {children}
-    </Tag>
+    </Component>
   );
 }
